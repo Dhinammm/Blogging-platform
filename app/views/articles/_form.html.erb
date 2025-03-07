@@ -1,0 +1,7 @@
+<%= form_with model: article do |form| %>
+  <%= form.label :title %><br>
+  <%= form.text_field :title %><br>
+  <h2>Write your content here</h2><br>
+  <%= form.text_area(:content, size: '150x10') %>
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Welcome to Articles page</h1>
+<%= link_to "New article", users_path %><br>
+<% @articles.each do |article| %>
+  <a href="/articles/<%= article.id %>">
+    <%= article.title %>
+    <br>
+  </a>
+<% end %><br>
+<a href = "/users">View users<a><br>
+<%= link_to "Sign up", new_user_path %>
+<br>
